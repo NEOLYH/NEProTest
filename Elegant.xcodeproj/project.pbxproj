@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89A645F31FC4220500FBDCC0 /* HCTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A645F21FC4220500FBDCC0 /* HCTabBarController.swift */; };
+		89A645F91FC423CE00FBDCC0 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A645F81FC423CE00FBDCC0 /* BaseViewController.swift */; };
+		89A645FB1FC4241200FBDCC0 /* HCDrivesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A645FA1FC4241200FBDCC0 /* HCDrivesViewController.swift */; };
+		89A645FD1FC4244900FBDCC0 /* HCPlantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A645FC1FC4244900FBDCC0 /* HCPlantViewController.swift */; };
+		89A645FF1FC4245E00FBDCC0 /* HCCommunityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A645FE1FC4245E00FBDCC0 /* HCCommunityViewController.swift */; };
+		89A646011FC4247D00FBDCC0 /* HCPersonalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A646001FC4247D00FBDCC0 /* HCPersonalViewController.swift */; };
 		89EA3A6D1FBEF79100F0CDD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EA3A6C1FBEF79100F0CDD4 /* AppDelegate.swift */; };
 		89EA3A6F1FBEF79100F0CDD4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EA3A6E1FBEF79100F0CDD4 /* ViewController.swift */; };
 		89EA3A721FBEF79100F0CDD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89EA3A701FBEF79100F0CDD4 /* Main.storyboard */; };
@@ -35,6 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		89A645F21FC4220500FBDCC0 /* HCTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCTabBarController.swift; sourceTree = "<group>"; };
+		89A645F81FC423CE00FBDCC0 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		89A645FA1FC4241200FBDCC0 /* HCDrivesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCDrivesViewController.swift; sourceTree = "<group>"; };
+		89A645FC1FC4244900FBDCC0 /* HCPlantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCPlantViewController.swift; sourceTree = "<group>"; };
+		89A645FE1FC4245E00FBDCC0 /* HCCommunityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCCommunityViewController.swift; sourceTree = "<group>"; };
+		89A646001FC4247D00FBDCC0 /* HCPersonalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCPersonalViewController.swift; sourceTree = "<group>"; };
 		89EA3A691FBEF79100F0CDD4 /* Elegant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Elegant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89EA3A6C1FBEF79100F0CDD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89EA3A6E1FBEF79100F0CDD4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +88,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		89A645F41FC4227700FBDCC0 /* HCDrives */ = {
+			isa = PBXGroup;
+			children = (
+				89A645FA1FC4241200FBDCC0 /* HCDrivesViewController.swift */,
+			);
+			path = HCDrives;
+			sourceTree = "<group>";
+		};
+		89A645F51FC4231200FBDCC0 /* Plants */ = {
+			isa = PBXGroup;
+			children = (
+				89A645FC1FC4244900FBDCC0 /* HCPlantViewController.swift */,
+			);
+			path = Plants;
+			sourceTree = "<group>";
+		};
+		89A645F61FC4231F00FBDCC0 /* Community */ = {
+			isa = PBXGroup;
+			children = (
+				89A645FE1FC4245E00FBDCC0 /* HCCommunityViewController.swift */,
+			);
+			path = Community;
+			sourceTree = "<group>";
+		};
+		89A645F71FC4235C00FBDCC0 /* Personal */ = {
+			isa = PBXGroup;
+			children = (
+				89A646001FC4247D00FBDCC0 /* HCPersonalViewController.swift */,
+			);
+			path = Personal;
+			sourceTree = "<group>";
+		};
 		89EA3A601FBEF79100F0CDD4 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +143,7 @@
 		89EA3A6B1FBEF79100F0CDD4 /* Elegant */ = {
 			isa = PBXGroup;
 			children = (
+				89EA3A9D1FBEF88800F0CDD4 /* Class */,
 				89EA3A6C1FBEF79100F0CDD4 /* AppDelegate.swift */,
 				89EA3A6E1FBEF79100F0CDD4 /* ViewController.swift */,
 				89EA3A701FBEF79100F0CDD4 /* Main.storyboard */,
@@ -126,6 +171,83 @@
 				89EA3A911FBEF79100F0CDD4 /* Info.plist */,
 			);
 			path = ElegantUITests;
+			sourceTree = "<group>";
+		};
+		89EA3A9D1FBEF88800F0CDD4 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				89EA3AA61FBEFA6800F0CDD4 /* Extensions */,
+				89EA3AA51FBEFA5B00F0CDD4 /* Base */,
+				89EA3AA41FBEFA4800F0CDD4 /* Services */,
+				89EA3AA31FBEFA3600F0CDD4 /* Helpers */,
+				89EA3AA21FBEFA2500F0CDD4 /* Category */,
+				89EA3AA11FBEFA1600F0CDD4 /* Views */,
+				89EA3AA01FBEFA0A00F0CDD4 /* Models */,
+				89EA3A9F1FBEF9FA00F0CDD4 /* Controllers */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		89EA3A9F1FBEF9FA00F0CDD4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				89A645F71FC4235C00FBDCC0 /* Personal */,
+				89A645F61FC4231F00FBDCC0 /* Community */,
+				89A645F51FC4231200FBDCC0 /* Plants */,
+				89A645F41FC4227700FBDCC0 /* HCDrives */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		89EA3AA01FBEFA0A00F0CDD4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		89EA3AA11FBEFA1600F0CDD4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		89EA3AA21FBEFA2500F0CDD4 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		89EA3AA31FBEFA3600F0CDD4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		89EA3AA41FBEFA4800F0CDD4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		89EA3AA51FBEFA5B00F0CDD4 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				89A645F21FC4220500FBDCC0 /* HCTabBarController.swift */,
+				89A645F81FC423CE00FBDCC0 /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		89EA3AA61FBEFA6800F0CDD4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,8 +384,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89A645F91FC423CE00FBDCC0 /* BaseViewController.swift in Sources */,
+				89A645FF1FC4245E00FBDCC0 /* HCCommunityViewController.swift in Sources */,
 				89EA3A6F1FBEF79100F0CDD4 /* ViewController.swift in Sources */,
+				89A645FB1FC4241200FBDCC0 /* HCDrivesViewController.swift in Sources */,
+				89A646011FC4247D00FBDCC0 /* HCPersonalViewController.swift in Sources */,
 				89EA3A751FBEF79100F0CDD4 /* Elegant.xcdatamodeld in Sources */,
+				89A645F31FC4220500FBDCC0 /* HCTabBarController.swift in Sources */,
+				89A645FD1FC4244900FBDCC0 /* HCPlantViewController.swift in Sources */,
 				89EA3A6D1FBEF79100F0CDD4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,6 +559,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 694LG5K33D;
 				INFOPLIST_FILE = Elegant/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.kuming.com.Elegant;
@@ -445,6 +574,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 694LG5K33D;
 				INFOPLIST_FILE = Elegant/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.kuming.com.Elegant;
