@@ -32,3 +32,8 @@ class HCPersonalViewController: BaseViewController {
     */
 
 }
+
+ 
+extension HCPersonalViewController {
+    
+}

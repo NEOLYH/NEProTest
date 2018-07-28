@@ -12,11 +12,20 @@ class HCDrivesViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.white
         
+        let colorArray = NSArray(ofColorsWith: ColorScheme.analogous, using: UIColor.flatBlue(), withFlatScheme: true)
+        
+        self.view.backgroundColor = UIColor(gradientStyle: UIGradientStyle.topToBottom, withFrame: self.view.frame, andColors: colorArray as! [Any])
+        self.view.addSubview(self.mainTableView)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    private lazy var mainTableView: UITableView = {
+       let tableView = UITableView.init(frame: self.view.bounds, style: UITableViewStyle.plain)
+        tableView.backgroundColor = UIColor.clear
+        return tableView
+    }()
 }

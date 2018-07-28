@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		17B145C07F6A5AD3C0BE1F41 /* libPods-Elegant.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63DDD5C9DFB3333710B95243 /* libPods-Elegant.a */; };
+		85C01B321D7D5F941D80BC9D /* Pods_Elegant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87723BFB10FE7AB6253C6A03 /* Pods_Elegant.framework */; };
 		89A645F31FC4220500FBDCC0 /* HCTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A645F21FC4220500FBDCC0 /* HCTabBarController.swift */; };
 		89A645F91FC423CE00FBDCC0 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A645F81FC423CE00FBDCC0 /* BaseViewController.swift */; };
 		89A645FB1FC4241200FBDCC0 /* HCDrivesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A645FA1FC4241200FBDCC0 /* HCDrivesViewController.swift */; };
@@ -42,8 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18A35059210AE67E00DEB510 /* Elegant-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Elegant-Bridging-Header.h"; sourceTree = "<group>"; };
 		5F941C3B9FE332CB5CBEF600 /* Pods-Elegant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elegant.release.xcconfig"; path = "Pods/Target Support Files/Pods-Elegant/Pods-Elegant.release.xcconfig"; sourceTree = "<group>"; };
-		63DDD5C9DFB3333710B95243 /* libPods-Elegant.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Elegant.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		87723BFB10FE7AB6253C6A03 /* Pods_Elegant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Elegant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89A645F21FC4220500FBDCC0 /* HCTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCTabBarController.swift; sourceTree = "<group>"; };
 		89A645F81FC423CE00FBDCC0 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		89A645FA1FC4241200FBDCC0 /* HCDrivesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCDrivesViewController.swift; sourceTree = "<group>"; };
@@ -72,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17B145C07F6A5AD3C0BE1F41 /* libPods-Elegant.a in Frameworks */,
+				85C01B321D7D5F941D80BC9D /* Pods_Elegant.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +263,7 @@
 		89EA3AA61FBEFA6800F0CDD4 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				18A35059210AE67E00DEB510 /* Elegant-Bridging-Header.h */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -269,7 +271,7 @@
 		A59F4F57D385F31E950310A2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				63DDD5C9DFB3333710B95243 /* libPods-Elegant.a */,
+				87723BFB10FE7AB6253C6A03 /* Pods_Elegant.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -345,6 +347,7 @@
 				TargetAttributes = {
 					89EA3A681FBEF79100F0CDD4 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0930;
 						ProvisioningStyle = Automatic;
 					};
 					89EA3A7F1FBEF79100F0CDD4 = {
@@ -413,9 +416,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Elegant/Pods-Elegant-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -637,12 +645,15 @@
 			baseConfigurationReference = DE84F2FEAC9E91DA26EE99A3 /* Pods-Elegant.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 694LG5K33D;
 				INFOPLIST_FILE = Elegant/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.kuming.com.Elegant;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Elegant/Class/Extensions/Elegant-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -653,12 +664,14 @@
 			baseConfigurationReference = 5F941C3B9FE332CB5CBEF600 /* Pods-Elegant.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 694LG5K33D;
 				INFOPLIST_FILE = Elegant/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.kuming.com.Elegant;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Elegant/Class/Extensions/Elegant-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
