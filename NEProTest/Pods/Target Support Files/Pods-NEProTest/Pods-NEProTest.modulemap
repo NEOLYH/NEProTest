@@ -1,0 +1,6 @@
+framework module Pods_NEProTest {
+  umbrella header "Pods-NEProTest-umbrella.h"
+
+  export *
+  module * { export * }
+}

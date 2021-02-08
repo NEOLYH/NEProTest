@@ -1,0 +1,16 @@
+PODS:
+  - WoodPeckeriOS (1.2.92)
+
+DEPENDENCIES:
+  - WoodPeckeriOS
+
+SPEC REPOS:
+  trunk:
+    - WoodPeckeriOS
+
+SPEC CHECKSUMS:
+  WoodPeckeriOS: 29f6fb07de24c8c8716b56a8764876a739c6e8e3
+
+PODFILE CHECKSUM: d5a4582a5170d7496eccf4ecec88b16518bb1805
+
+COCOAPODS: 1.10.1
