@@ -1,8 +1,8 @@
 # NEProTest
 
 WoodPecker
-• iOS项目集成woodPecker。
-• 集成项目,完成不需其他注册操作。
+- iOS项目集成woodPecker。
+- 集成项目,完成不需其他注册操作。
 
 ```
 use_frameworks!
