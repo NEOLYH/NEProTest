@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		7C6FADD8CDF021D411150932 /* Pods_NEProTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98C5DF08EFAB5BD34009A9BE /* Pods_NEProTest.framework */; };
+		8999F49825DFAA2C00591178 /* SanboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8999F49725DFAA2C00591178 /* SanboxViewController.swift */; };
+		8999F49F25DFAE1400591178 /* CerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8999F49E25DFAE1400591178 /* CerViewController.m */; };
+		8999F4A225DFB0A800591178 /* cert.der in Resources */ = {isa = PBXBuildFile; fileRef = 8999F4A125DFB0A800591178 /* cert.der */; };
 		89A9A1A925D10E6A000F9748 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A9A1A825D10E6A000F9748 /* AppDelegate.swift */; };
 		89A9A1AD25D10E6A000F9748 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A9A1AC25D10E6A000F9748 /* ViewController.swift */; };
 		89A9A1B025D10E6A000F9748 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89A9A1AE25D10E6A000F9748 /* Main.storyboard */; };
@@ -17,6 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8999F49725DFAA2C00591178 /* SanboxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanboxViewController.swift; sourceTree = "<group>"; };
+		8999F49C25DFAE1300591178 /* NEProTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NEProTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		8999F49D25DFAE1400591178 /* CerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CerViewController.h; sourceTree = "<group>"; };
+		8999F49E25DFAE1400591178 /* CerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CerViewController.m; sourceTree = "<group>"; };
+		8999F4A125DFB0A800591178 /* cert.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = cert.der; sourceTree = "<group>"; };
 		89A9A1A525D10E6A000F9748 /* NEProTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NEProTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89A9A1A825D10E6A000F9748 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89A9A1AC25D10E6A000F9748 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,6 +50,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8999F49625DFAA0100591178 /* Sanbox */ = {
+			isa = PBXGroup;
+			children = (
+				8999F49725DFAA2C00591178 /* SanboxViewController.swift */,
+			);
+			path = Sanbox;
+			sourceTree = "<group>";
+		};
+		8999F49B25DFADD300591178 /* 自签名证书https校验 */ = {
+			isa = PBXGroup;
+			children = (
+				8999F49D25DFAE1400591178 /* CerViewController.h */,
+				8999F49E25DFAE1400591178 /* CerViewController.m */,
+				8999F49C25DFAE1300591178 /* NEProTest-Bridging-Header.h */,
+			);
+			path = "自签名证书https校验";
+			sourceTree = "<group>";
+		};
 		89A9A19C25D10E6A000F9748 = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +89,9 @@
 		89A9A1A725D10E6A000F9748 /* NEProTest */ = {
 			isa = PBXGroup;
 			children = (
+				8999F4A125DFB0A800591178 /* cert.der */,
+				8999F49B25DFADD300591178 /* 自签名证书https校验 */,
+				8999F49625DFAA0100591178 /* Sanbox */,
 				89A9A1A825D10E6A000F9748 /* AppDelegate.swift */,
 				89A9A1AC25D10E6A000F9748 /* ViewController.swift */,
 				89A9A1AE25D10E6A000F9748 /* Main.storyboard */,
@@ -124,6 +153,7 @@
 				TargetAttributes = {
 					89A9A1A425D10E6A000F9748 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -151,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89A9A1B525D10E6B000F9748 /* LaunchScreen.storyboard in Resources */,
+				8999F4A225DFB0A800591178 /* cert.der in Resources */,
 				89A9A1C525D11B8A000F9748 /* NEProTest.plist in Resources */,
 				89A9A1B225D10E6B000F9748 /* Assets.xcassets in Resources */,
 				89A9A1B025D10E6A000F9748 /* Main.storyboard in Resources */,
@@ -207,7 +238,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				89A9A1AD25D10E6A000F9748 /* ViewController.swift in Sources */,
+				8999F49825DFAA2C00591178 /* SanboxViewController.swift in Sources */,
 				89A9A1A925D10E6A000F9748 /* AppDelegate.swift in Sources */,
+				8999F49F25DFAE1400591178 /* CerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +388,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 694LG5K33D;
 				INFOPLIST_FILE = NEProTest/Info.plist;
@@ -364,6 +398,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pinglian.app.NEProTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NEProTest/自签名证书https校验/NEProTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -375,6 +411,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 694LG5K33D;
 				INFOPLIST_FILE = NEProTest/Info.plist;
@@ -384,6 +421,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pinglian.app.NEProTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NEProTest/自签名证书https校验/NEProTest-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
