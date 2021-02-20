@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		7C6FADD8CDF021D411150932 /* Pods_NEProTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98C5DF08EFAB5BD34009A9BE /* Pods_NEProTest.framework */; };
+		8960E42925E0AB1E00B6F3BA /* TouchTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8960E42725E0AB1E00B6F3BA /* TouchTestViewController.m */; };
+		8960E42A25E0AB1E00B6F3BA /* TouchTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8960E42825E0AB1E00B6F3BA /* TouchTestViewController.xib */; };
+		8960E42E25E0ABB600B6F3BA /* TouchOneView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8960E42D25E0ABB600B6F3BA /* TouchOneView.m */; };
+		8960E43225E0ABCA00B6F3BA /* TouchTwoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8960E43125E0ABCA00B6F3BA /* TouchTwoView.m */; };
+		8960E43625E0B35E00B6F3BA /* TouchButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8960E43525E0B35E00B6F3BA /* TouchButton.m */; };
 		8999F49825DFAA2C00591178 /* SanboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8999F49725DFAA2C00591178 /* SanboxViewController.swift */; };
 		8999F49F25DFAE1400591178 /* CerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8999F49E25DFAE1400591178 /* CerViewController.m */; };
 		8999F4A225DFB0A800591178 /* cert.der in Resources */ = {isa = PBXBuildFile; fileRef = 8999F4A125DFB0A800591178 /* cert.der */; };
@@ -20,6 +25,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8960E42625E0AB1E00B6F3BA /* TouchTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchTestViewController.h; sourceTree = "<group>"; };
+		8960E42725E0AB1E00B6F3BA /* TouchTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchTestViewController.m; sourceTree = "<group>"; };
+		8960E42825E0AB1E00B6F3BA /* TouchTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TouchTestViewController.xib; sourceTree = "<group>"; };
+		8960E42C25E0ABB600B6F3BA /* TouchOneView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchOneView.h; sourceTree = "<group>"; };
+		8960E42D25E0ABB600B6F3BA /* TouchOneView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchOneView.m; sourceTree = "<group>"; };
+		8960E43025E0ABCA00B6F3BA /* TouchTwoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchTwoView.h; sourceTree = "<group>"; };
+		8960E43125E0ABCA00B6F3BA /* TouchTwoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchTwoView.m; sourceTree = "<group>"; };
+		8960E43425E0B35E00B6F3BA /* TouchButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchButton.h; sourceTree = "<group>"; };
+		8960E43525E0B35E00B6F3BA /* TouchButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchButton.m; sourceTree = "<group>"; };
 		8999F49725DFAA2C00591178 /* SanboxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanboxViewController.swift; sourceTree = "<group>"; };
 		8999F49C25DFAE1300591178 /* NEProTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NEProTest-Bridging-Header.h"; sourceTree = "<group>"; };
 		8999F49D25DFAE1400591178 /* CerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CerViewController.h; sourceTree = "<group>"; };
@@ -50,6 +64,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8960E42525E0AAC900B6F3BA /* 事件分发机制 */ = {
+			isa = PBXGroup;
+			children = (
+				8960E42625E0AB1E00B6F3BA /* TouchTestViewController.h */,
+				8960E42725E0AB1E00B6F3BA /* TouchTestViewController.m */,
+				8960E42825E0AB1E00B6F3BA /* TouchTestViewController.xib */,
+				8960E42C25E0ABB600B6F3BA /* TouchOneView.h */,
+				8960E42D25E0ABB600B6F3BA /* TouchOneView.m */,
+				8960E43025E0ABCA00B6F3BA /* TouchTwoView.h */,
+				8960E43125E0ABCA00B6F3BA /* TouchTwoView.m */,
+				8960E43425E0B35E00B6F3BA /* TouchButton.h */,
+				8960E43525E0B35E00B6F3BA /* TouchButton.m */,
+			);
+			name = "事件分发机制";
+			sourceTree = "<group>";
+		};
 		8999F49625DFAA0100591178 /* Sanbox */ = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				8999F4A125DFB0A800591178 /* cert.der */,
+				8960E42525E0AAC900B6F3BA /* 事件分发机制 */,
 				8999F49B25DFADD300591178 /* 自签名证书https校验 */,
 				8999F49625DFAA0100591178 /* Sanbox */,
 				89A9A1A825D10E6A000F9748 /* AppDelegate.swift */,
@@ -180,6 +211,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8960E42A25E0AB1E00B6F3BA /* TouchTestViewController.xib in Resources */,
 				89A9A1B525D10E6B000F9748 /* LaunchScreen.storyboard in Resources */,
 				8999F4A225DFB0A800591178 /* cert.der in Resources */,
 				89A9A1C525D11B8A000F9748 /* NEProTest.plist in Resources */,
@@ -238,9 +270,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				89A9A1AD25D10E6A000F9748 /* ViewController.swift in Sources */,
+				8960E42E25E0ABB600B6F3BA /* TouchOneView.m in Sources */,
 				8999F49825DFAA2C00591178 /* SanboxViewController.swift in Sources */,
+				8960E43225E0ABCA00B6F3BA /* TouchTwoView.m in Sources */,
 				89A9A1A925D10E6A000F9748 /* AppDelegate.swift in Sources */,
+				8960E42925E0AB1E00B6F3BA /* TouchTestViewController.m in Sources */,
 				8999F49F25DFAE1400591178 /* CerViewController.m in Sources */,
+				8960E43625E0B35E00B6F3BA /* TouchButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

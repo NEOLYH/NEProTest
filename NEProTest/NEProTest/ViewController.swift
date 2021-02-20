@@ -10,7 +10,7 @@ import Foundation
 
 class ViewController: UIViewController {
 
-    fileprivate var dataSource:[String] = ["Sanbox","自签名的证书进行HTTPS请求校验"]
+    fileprivate var dataSource:[String] = ["Sanbox","自签名的证书进行HTTPS请求校验","事件分发机制"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,6 +49,9 @@ extension ViewController:UITableViewDelegate,UITableViewDataSource{
             break
         case 1:
             self.navigationController?.pushViewController(CerViewController(), animated: true)
+            break
+        case 2:
+            self.navigationController?.pushViewController(TouchTestViewController(), animated: true)
             break
         default:
             break
